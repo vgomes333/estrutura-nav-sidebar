@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Nav Sidebar</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <i class="top-header-logo fas fa-circle"></i>
+        <span class="top-header-logo-name">
+            Nome Empresa
+        </span>
+        <i class="top-header-btn-hamburger fas fa-bars"></i>
+    </header>
+    
+    <aside class="sidebar">
+        <ul>
+            <li class="sidebar-dropdown">
+                <span href="#" class="sidebar-item dropdown-icon">
+                    <i class="sidebar-item-icon fas fa-user"></i>
+                    <span class="sidebar-item-text">User</span>
+                </span>
+                <ul class="sidebar-dropdown-subitem">
+                    <li class="sidebar-dropdown-subitem-text">
+                        <span>
+                            Alterar Senha
+                        </span>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a class="sidebar-item" href="index.html">
+                    <i class="sidebar-item-icon fas fa-calendar-alt"></i>
+                    <span class="sidebar-item-text">Apontamentos</span>
+                </a>
+            </li>
+            
+            <li  class="sidebar-dropdown">
+                <span class="sidebar-item dropdown-icon">
+                    <i class="sidebar-item-icon far fa-clipboard"></i>
+                    <span class="sidebar-item-text">Relatórios</span>
+                </span>
+                
+                <ul class="sidebar-dropdown-subitem">
+                    <li class="sidebar-dropdown-subitem-text">
+                        <span>
+                            Serviços Realizados
+                        </span>   
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a class="sidebar-item" href="">
+                    <i class="sidebar-item-icon fas fa-sign-out-alt"></i>
+                    <span class="sidebar-item-text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
