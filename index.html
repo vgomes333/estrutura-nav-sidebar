@@ -17,10 +17,11 @@
         <span class="top-header-logo-name">
             Nome Empresa
         </span>
-        <i class="top-header-btn-hamburger fas fa-bars"></i>
+        <i id="btnOpenNav" class="fas fa-bars sidebar-btn" onclick="openNav()"></i>
+        <i id="btnCloseNav" class="fas fa-times sidebar-btn" style="display:none" onclick="closeNav()"></i>
     </header>
     
-    <aside class="sidebar">
+    <aside id="side" class="sidebar">
         <ul>
             <li class="sidebar-dropdown">
                 <span href="#" class="sidebar-item dropdown-icon">
@@ -66,8 +67,9 @@
             </li>
         </ul>
     </aside>
-
+    
     <script src="js/dropdown.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>

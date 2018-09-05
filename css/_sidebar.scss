@@ -33,26 +33,18 @@ $headerHeight: 60px;
 	left: 0;
 	top: 0;
 	padding-top: $headerHeight;
-	width: 238px;
+	width: 5%;
 	height: 100%;
 	background-color: #364150;
 	z-index: 1;
-	
-	.dropdown-icon{
-		&::after{
-			content: '\02c2';
-			color: white;
-			font-weight: bold;
-			position: absolute;
-			right: 0;
-			margin-right: 15px;
-		}
-		
-		&.active:after {
-			content: "\02c5";
-		}
+	transition: 0.2s ease-out;
+
+	&-btn{
+		display: inline-block;
+		color: #fff;
+		font-size: 22px;
+		cursor: pointer;
 	}
-	
 	
 	&-item {
 		color: #b4bcc8;
@@ -72,9 +64,11 @@ $headerHeight: 60px;
 			font-size: 20px;
 			width: 24px;
 			margin-right: 4px;
+
 		}
 		
 		&-text{
+			display: none;
 			font-size: 16px;
 			font-weight: 300;
 		}	

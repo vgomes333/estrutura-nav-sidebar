@@ -37,19 +37,16 @@ a {
   left: 0;
   top: 0;
   padding-top: 60px;
-  width: 238px;
+  width: 5%;
   height: 100%;
   background-color: #364150;
-  z-index: 1; }
-  .sidebar .dropdown-icon::after {
-    content: '\02c2';
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    margin-right: 15px; }
-  .sidebar .dropdown-icon.active:after {
-    content: "\02c5"; }
+  z-index: 1;
+  transition: 0.2s ease-out; }
+  .sidebar-btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer; }
   .sidebar-item {
     color: #b4bcc8;
     display: flex;
@@ -66,6 +63,7 @@ a {
       width: 24px;
       margin-right: 4px; }
     .sidebar-item-text {
+      display: none;
       font-size: 16px;
       font-weight: 300; }
   .sidebar-dropdown-subitem {
